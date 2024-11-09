@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karanganyar Residence | Home</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+
+<body>
+        <nav
+            class="fixed w-[100%] top-0 z-40 p-3 px-20 flex justify-between box-border bg-slate-500/30 backdrop-blur-md rounded-sm text-white font-[Poppins]">
+            <header class="flex items-center justify-around">
+                <div class="img-hero bg-[url('/assets/img/logo.png')] bg-cover w-[108px] h-32"></div>
+                <div class="flex-none w-[60%] box-border">
+                    <h1 class="font-extrabold text-2xl">KARANGANYAR</h1>
+                    <p class="text-xs">Karanganyar Tentram <br><span class="text-[10px]">(Tenang, Teduh, Rapi, Aman, Makmur)</span></p>
+                </div>
+            </header>
+            <ul
+                class="w-[70%] flex justify-around *:m-auto *:p-3 *:box-border *:transition-all *:duration-300 *:rounded-lg *:uppercase *:cursor-pointer">
+                <li class="hover:bg-black/50 hover:backdrop-blur-md">
+                    <a
+                        href="#explore">Jelajahi</a></li>
+                <li class="hover:bg-black/50 hover:backdrop-blur-md"><a
+                        href="#event">Event</a></li>
+                <li class="hover:bg-black/50 hover:backdrop-blur-md"><a
+                        href="Komunitas.html">Bisnis dan Komunitas</a></li>
+                <li class="hover:bg-black/50 hover:backdrop-blur-md"><a
+                        href="#schadule">Kunjungan</a></li>
+                <li class="hover:bg-black/50 hover:backdrop-blur-md group relative">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                      </svg>
+                    <ul class="invisible absolute group-hover:visible p-2 *:p-2 *:rounded-md bg-slate-600 top-12 left-0 m-0 backdrop-blur-md rounded-lg">
+                        <li class="hover:bg-black/50 hover:backdrop-blur-md"><a
+                                href="">EN</a></li>
+                        <li class="hover:bg-black/50 hover:backdrop-blur-md"><a
+                                href="">IN</a></li>
+                    </ul>
+                    <li class="p-3 hover:bg-black/50 hover:backdrop-blur-md  border border-slate-600 group">
+                        <svg class="w-6 h-6 group-hover:text-white text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                          </svg>
+                          
+                    </li>
+                </li>
+            </ul>
+        </nav>
+        <main class="w-[100%] font-[Poppins]">
+            <section id="Welcome" class="h-screen">
+                <div class="w-[100%] bg-green-300 absolute z-[-1] top-0 opacity-80 ">
+                    <video
+                        src="assets/video/timelapse.mp4"
+                        autoplay muted class="w-[100%]"></video>
+                </div>
+                <div class="h-screen flex flex-col justify-center items-center text-slate-100">
+                    <h3 class="font-semibold text-4xl">Selamat Datang</h3>
+                    <h1 class="mt-3 font-extrabold text-8xl">Bumi IntanPari</h1>
+                    <button id="showPopup">
+                        <svg class="w-10 h-10 text-gray-800 dark:text-white rounded-full border border-slate-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                          </svg>
+                    </button>
+                    <div id="customPopup" class="hidden fixed top-[50%] bg-white w-[40%] mx-auto p-5 text-black rounded-lg">
+                        <p class="">
+                            "Selamat datang di Web Karanganyar! Temukan berbagai informasi, kegiatan, dan potensi luar
+                            biasa dari daerah yang kaya akan budaya dan tradisi ini. Jelajahi dan dukung kemajuan
+                            Karanganyar untuk masa depan yang lebih cerah."</p>
+                        <button id="closeBtn" class="absolute top-0 right-0 w-10 h-10 bg-red-500 rounded-full">x</button>
+                    </div>
+                </div>
+            </section>
+            <section id="explore" class="mt-20 h-screen ml-24 flex items-center">
+                <div class="hero-image bg-[url(/assets/img/candi.jpg)] bg-cover w-[40%] h-[90%] bg-green-300 mr-16 rounded-md shadow-3xl bg-center">
+
+                </div>
+                <aside>
+                    <h1 class="font-semibold text-2xl items-start font-[Nunito]">Ayo Jelajahi KARANGANYAR ..</h1>
+                    <ul class="font-extrabold text-4xl *:mt-10 *:flex *:items-center">
+                        <li>
+                            <svg class="w-12 h-12 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+                              </svg>
+                            <a href="" class="hover:text-slate-400">Ikonik</a>
+                        </li>
+                        <li>
+                            <svg class="w-12 h-12 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+                              </svg>
+                            <a href="" class="hover:text-slate-400">Makanan Khas</a></li>
+                        <li>
+                            <svg class="w-12 h-12 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+                              </svg>
+                            <a href="" class="hover:text-slate-400">Penginapan</a></li>
+                        <li>
+                            <svg class="w-12 h-12 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+                              </svg>
+                            <a href="" class="hover:text-slate-400">Event</a></li>
+                        <li>
+                            <svg class="w-12 h-12 text-gray-800 dark:text-white mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"/>
+                              </svg>
+                            <a href="" class="hover:text-slate-400">Kebudayaan</a></li>
+                    </ul>
+                </aside>
+            </section>
+            <section id="schadule" class="w-full h-screen  mt-10 p-8">
+                <h1 class="text-6xl font-extrabold font-[Nunito]">Rencanakan Liburanmu ...</h1>
+                <div class="mt-10 w-full h-[90%] grid grid-rows-3 grid-cols-4 space-x-2 space-y-2 *:rounded-lg  text-white">
+                    <div id="wisata" class="col-span-2 row-span-3 bg-yellow-300 bg-[url(/assets/img/wisata.jpg)] bg-cover bg-opacity-40">
+                        <div class="h-full flex flex-col p-10 box-border justify-end *:hover:scale-110  *:transition-all *:duration-500">
+                            <h1 class="font-bold text-4xl">Wisata Lokal</h1>
+                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, reiciendis?</p>
+                        </div>
+                    </div>
+                    <div id="" class="col-span-1 row-span-2 bg-green-300 bg-[url(/assets/img/wisata.jpg)] bg-cover bg-opacity-40">
+                        <div class="h-full flex flex-col p-10 box-border justify-end *:hover:scale-110  *:transition-all *:duration-500">
+                            <h1 class="font-bold text-2xl">Tempat Menginap</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, reiciendis?</p>
+                        </div>
+                    </div>
+                    <div id="" class="col-span-1 row-span-2 bg-red-600 bg-[url(/assets/img/sarana.jpg)] bg-cover bg-opacity-40 bg-center">
+                        <div class="h-full flex flex-col p-10 box-border justify-end *:hover:scale-110  *:transition-all *:duration-500">
+                            <h1 class="font-bold text-2xl">Sarana Publik</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, reiciendis?</p>
+                        </div>
+                    </div>
+                    <div id="" class="col-span-2 row-span-1 bg-purple-600 bg-[url(/assets/img/sejarah.jpg)] bg-cover bg-opacity-40">
+                        <div class="h-full flex flex-col p-10 box-border justify-end *:hover:scale-105  *:transition-all *:duration-500">
+                            <h1 class="font-bold text-2xl">Sejarah</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, reiciendis?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="event" class="w-full  mt-20 p-10">
+                <h1 class="font-bold text-xl">Event yang berlangsung</h1>
+                <div class="event-info w-full h-full flex justify-between">
+                    <aside class="w-[50%] mt-10">
+                        <h1 class="font-extrabold text-6xl">Hari Jadi Kota Karanganyar</h1>
+                        <p class="mt-5 text-slate-300">Event Hari Jadi Karanganyar adalah momen bersejarah yang dirayakan setiap tahun sebagai bentuk penghormatan terhadap perjalanan panjang yang telah ditempuh oleh daerah ini. Tahun ini, peringatan Hari Jadi Karanganyar menjadi kesempatan istimewa untuk merangkul seluruh elemen masyarakat, memperkuat kebersamaan, dan mengapresiasi pencapaian serta potensi yang dimiliki. Dengan tema yang merepresentasikan semangat kemajuan dan pelestarian budaya, berbagai rangkaian acara telah disiapkan untuk menyemarakkan hari istimewa ini.</p>
+                        <div class="more flex items-center mt-4 group">
+                            <a href="Detail-event.html" class="font-semibold text-2xl text-slate-500 hover:text-slate-300">Selengkapnya</a>
+                            <svg class="w-10 h-10 text-gray-800 dark:text-white mt-2 group-hover:translate-x-2 transition-all duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                              </svg>
+                        </div>
+                    </aside>
+                    <div class="hero-image bg-[url(/assets/img/hut.jpg)] bg-cover w-[40%] h-96 bg-green-300 mr-16 rounded-md shadow-2xl bg-center"></div>
+                </div>
+                <div class="event-info w-full h-full flex justify-between mt-4">
+                    <div class="hero-image bg-[url(/assets/img/karnaval.jpg)] bg-cover w-[40%] h-96 bg-green-300 mr-16 rounded-md shadow-2xl"></div>
+                    <aside class="w-[50%] mt-10">
+                        <h1 class="font-extrabold text-6xl">Karnaval Mobil Hias</h1>
+                        <p class="mt-5 text-slate-300">Event Karnaval Mobil Hias Karanganyar adalah salah satu rangkaian peringatan Hari Jadi yang selalu dinanti-nantikan oleh masyarakat. Acara ini tidak hanya menjadi ajang hiburan dan pesta meriah, tetapi juga wujud kreativitas, kekompakan, serta apresiasi terhadap kearifan lokal. Mobil-mobil yang dihias penuh warna dan tema-tema unik berbaris rapi, menciptakan parade yang memukau ribuan mata yang hadir.</p>
+                        <div class="more flex items-center mt-4 group">
+                            <svg class="w-10 h-10 text-gray-800 dark:text-white mt-2 group-hover:translate-x-2 transition-all duration-300 rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                              </svg>
+                            <a href="" class="font-semibold text-2xl text-slate-500 hover:text-slate-300 ml-5">Selengkapnya</a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <section id="maps" class="mt-10  p-10">
+                <h1 class="text-5xl font-semibold mb-10">Telusuri Kota Karanganyar</h1>
+                <iframe class="mx-auto rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506187.56408268795!2d110.62176271923765!3d-7.61947385845181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a21f5416ee28d%3A0x3027a76e352bc60!2sKabupaten%20Karanganyar%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1731155450636!5m2!1sid!2sid" width="1160" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <footer class="h-[350px]" id="news">
+            <main class="w-[100%] h-[100%] flex bg-slate-800 text-white border-b border-solid rounded-t-xl font-[Poppins]">
+                <div class="w-[60%] h-[100%] py-6 px-10 flex justify-between">
+                    <div class="sub-footer-1 w-[40%]">
+                        <h1 class="h-[25%] mt-4 font-bold text-2xl">Hubungi Kami</h1>
+                        <p class="mt">
+                            Saran dan Masukan
+                            <textarea name="" id="" class="w-full h-[50px] my-5 font-semibold font-[Poppins] text-black p-2 rounded-md text-xs"></textarea>
+                            <span>WA (+62) 812-1111-7082</span><br>
+                            <a href="" class="text-blue-500">DISPARPORA Kab. Karanganyar</a>
+                        </p>
+                    </div>
+                    <div class="sub-footer-1 w-[25%]">
+                        <h1 class="h-[25%] mt-4 font-bold text-2xl">Jelajahi</h1>
+                        <p>
+                            <ul class="">
+                                <li><a href="" class="hover:text-blue-400">Kesenian dan Budaya</a></li>
+                                <li><a href="" class="hover:text-blue-400">Makanan khas</a></li>
+                                <li><a href="" class="hover:text-blue-400">Pakaian Daerah</a></li>
+                                <li><a href="" class="hover:text-blue-400">Sarana Publik</a></li>
+                                <li><a href="" class="hover:text-blue-400">Rencana Liburan</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="sub-footer-1 w-[25%]">
+                        <h1 class="h-[25%] mt-4 font-bold text-xl">Media Sosial</h1>
+                        <p>
+                            <ul class="*:flex justify-center">
+                                <li class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256" class="mr-6">
+                                        <g fill="#fffefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.016 4.432,10.984 10.206,11.852v-8.672h-2.969v-3.154h2.969v-2.099c0,-3.475 1.693,-5 4.581,-5c1.383,0 2.115,0.103 2.461,0.149v2.753h-1.97c-1.226,0 -1.654,1.163 -1.654,2.473v1.724h3.593l-0.487,3.154h-3.106v8.697c5.857,-0.794 10.376,-5.802 10.376,-11.877c0,-6.627 -5.373,-12 -12,-12z"></path></g></g>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                                        <g fill="#fffefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M7.54688,0c-4.15625,0 -7.54687,3.39063 -7.54687,7.54688v10.90625c0,4.15625 3.39063,7.54688 7.54688,7.54688h10.90625c4.15625,0 7.54688,-3.39062 7.54688,-7.54687v-10.90625c0,-4.15625 -3.39062,-7.54687 -7.54687,-7.54687zM7.54688,2h10.90625c3.07422,0 5.54688,2.46875 5.54688,5.54688v10.90625c0,3.07422 -2.46875,5.54688 -5.54687,5.54688h-10.90625c-3.07422,0 -5.54687,-2.46875 -5.54687,-5.54687v-10.90625c0,-3.07422 2.46875,-5.54687 5.54688,-5.54687zM20.5,4c-0.82812,0 -1.5,0.67188 -1.5,1.5c0,0.82813 0.67188,1.5 1.5,1.5c0.82813,0 1.5,-0.67187 1.5,-1.5c0,-0.82812 -0.67187,-1.5 -1.5,-1.5zM13,6c-3.85547,0 -7,3.14453 -7,7c0,3.85547 3.14453,7 7,7c3.85547,0 7,-3.14453 7,-7c0,-3.85547 -3.14453,-7 -7,-7zM13,8c2.77344,0 5,2.22656 5,5c0,2.77344 -2.22656,5 -5,5c-2.77344,0 -5,-2.22656 -5,-5c0,-2.77344 2.22656,-5 5,-5z"></path></g></g>
+                                    </svg>
+                                </li>
+                                <li class="mt-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256" class="mr-6">
+                                        <g fill="#fffefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.757,0 -5,2.243 -5,5v32c0,2.757 2.243,5 5,5h32c2.757,0 5,-2.243 5,-5v-32c0,-2.757 -2.243,-5 -5,-5zM37.006,22.323c-0.227,0.021 -0.457,0.035 -0.69,0.035c-2.623,0 -4.928,-1.349 -6.269,-3.388c0,5.349 0,11.435 0,11.537c0,4.709 -3.818,8.527 -8.527,8.527c-4.709,0 -8.527,-3.818 -8.527,-8.527c0,-4.709 3.818,-8.527 8.527,-8.527c0.178,0 0.352,0.016 0.527,0.027v4.202c-0.175,-0.021 -0.347,-0.053 -0.527,-0.053c-2.404,0 -4.352,1.948 -4.352,4.352c0,2.404 1.948,4.352 4.352,4.352c2.404,0 4.527,-1.894 4.527,-4.298c0,-0.095 0.042,-19.594 0.042,-19.594h4.016c0.378,3.591 3.277,6.425 6.901,6.685z"></path></g></g>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                                        <g fill="#fffefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[40%] h-[100%] border-l flex flex-col justify-center items-center">
+                    <h1 class="mb-2 font-bold text-xl">Pemerintah Kabupaten Karanganyar</h1>
+                </div>
+            </main>
+            <div
+                class="copyright w-[100%] h-[40px] bg-slate-800 flex justify-center items-center text-[18px] text-slate-200">
+                Learning Labs © L0124131 Jauhar Mufid Tamir
+            </div>
+        </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
